@@ -631,6 +631,14 @@ body {
   cursor: pointer;
 }
 
+.btn-icon {
+  transition: fill 250ms var(--transition-timing);
+}
+
+.modal__btn:hover > .btn-icon {
+  fill: var(--accent-color);
+}
+
 .back-drop.is-hidden {
   pointer-events: none;
   opacity: 0;
@@ -737,7 +745,7 @@ body {
     background-color 250ms var(--transition-timing);
 }
 
-.offer__checkbox:checked ~ .offer__label > .offer__icon {
+.offer__checkbox:checked + .offer__label > .offer__icon {
   border: none;
   background-color: var(--accent-color);
 }
