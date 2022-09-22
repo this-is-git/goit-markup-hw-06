@@ -160,6 +160,8 @@ body {
 
 /* heroi */
 .heroi {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
   background-color: var(--bg-color);
   background-image: linear-gradient(
@@ -435,6 +437,7 @@ body {
 }
 
 .footer__title {
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white);
@@ -557,7 +560,7 @@ body {
   height: 100%;
   padding: 63px 24px;
   background-color: var(--accent-color);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--transition-timing);
 }
 
@@ -567,11 +570,17 @@ body {
   color: var(--white);
 }
 
-.cases__item:hover .cases__overlay {
+.cases__link {
+  display: block;
+}
+
+.cases__link:hover .cases__overlay,
+.cases__link:focus .cases__overlay {
   transform: translateY(0);
 }
 
-.cases__item:hover {
+.cases__link:hover,
+.cases__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
