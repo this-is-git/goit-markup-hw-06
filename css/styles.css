@@ -544,7 +544,6 @@ body {
 .cases__item {
   width: calc((100% - 6 * 15px) / 3);
   margin: 15px;
-  transition: box-shadow 250ms var(--transition-timing);
 }
 
 .cases__wraper {
@@ -571,6 +570,7 @@ body {
 }
 
 .cases__link {
+  transition: box-shadow 250ms var(--transition-timing);
   display: block;
 }
 
